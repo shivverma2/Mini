@@ -1,587 +1,603 @@
-<!DOCTYPE html>
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-```
-<meta name="description"
-      content="Professional Company Employee Directory">
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta
+    name="description"
+    content="Professional Company Employee Directory"
+>
 
 <title>Company Profile | Employee Directory</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+>
 
 <link rel="stylesheet" href="css/style.css">
-```
 
-</head>
-
-<body>
-
+</head> <body>
 <!-- ================= HEADER ================= -->
 
 <header class="site-header" id="siteHeader">
+    <div class="container nav-wrapper">
 
-```
-<div class="container nav-wrapper">
+        <a href="#home" class="brand" aria-label="Company Profile Home">
+            <div class="brand-logo">CP</div>
 
-    <a href="#" class="brand">
-        <div class="brand-logo">
-            CP
-        </div>
-
-        <div class="brand-text">
-            <strong id="companyName">COMPANY PROFILE</strong>
-            <span>Employee Directory</span>
-        </div>
-    </a>
-
-    <nav class="main-nav" id="mainNav">
-
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#directory" class="nav-link">Employees</a>
-        <a href="#contact" class="nav-link">Contact</a>
-
-        <a href="login.html" class="nav-admin">
-            Admin Login
+            <div class="brand-text">
+                <strong id="companyName">COMPANY PROFILE</strong>
+                <span>Employee Directory</span>
+            </div>
         </a>
 
-    </nav>
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#directory" class="nav-link">Employees</a>
+            <a href="#contact" class="nav-link">Contact</a>
 
-    <button class="menu-toggle"
+            <a href="login.html" class="nav-admin">
+                Admin Login
+            </a>
+        </nav>
+
+        <button
+            class="menu-toggle"
             id="menuToggle"
-            aria-label="Open navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+            type="button"
+            aria-label="Open navigation"
+            aria-controls="mainNav"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-</div>
-```
-
+    </div>
 </header>
 
-<!-- ================= HERO ================= -->
+
+<!-- ================= MAIN ================= -->
 
 <main>
 
-<section class="hero" id="home">
+    <!-- ================= HERO ================= -->
 
-```
-<div class="hero-background"></div>
+    <section class="hero" id="home">
 
-<div class="container hero-grid">
+        <div class="hero-background"></div>
 
-    <div class="hero-content">
+        <div class="container hero-grid">
 
-        <div class="eyebrow">
-            <span class="eyebrow-dot"></span>
-            Official Company Directory
-        </div>
+            <div class="hero-content">
 
-        <h1>
-            Find the right
-            <span>employee</span>
-            instantly.
-        </h1>
+                <div class="eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    Official Company Directory
+                </div>
 
-        <p>
-            Search our employee directory by Employee ID or
-            employee name and access authorized professional
-            information quickly.
-        </p>
+                <h1>
+                    Find the right
+                    <span>employee</span>
+                    instantly.
+                </h1>
 
-        <div class="hero-actions">
-            <a href="#directory" class="btn btn-primary">
-                Search Employees
-                <span>→</span>
-            </a>
+                <p>
+                    Search our employee directory by Employee ID or
+                    employee name and access authorized professional
+                    information quickly.
+                </p>
 
-            <a href="#about" class="btn btn-secondary">
-                About Company
-            </a>
-        </div>
+                <div class="hero-actions">
 
-        <div class="hero-stats">
+                    <a href="#directory" class="btn btn-primary">
+                        Search Employees
+                        <span aria-hidden="true">→</span>
+                    </a>
 
-            <div>
-                <strong id="totalEmployees">0</strong>
-                <span>Employees</span>
+                    <a href="#about" class="btn btn-secondary">
+                        About Company
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong id="totalEmployees">0</strong>
+                        <span>Employees</span>
+                    </div>
+
+                    <div>
+                        <strong>24/7</strong>
+                        <span>Directory Access</span>
+                    </div>
+
+                    <div>
+                        <strong>100%</strong>
+                        <span>Responsive</span>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div>
-                <strong>24/7</strong>
-                <span>Directory Access</span>
-            </div>
 
-            <div>
-                <strong>100%</strong>
-                <span>Responsive</span>
+            <div class="hero-visual">
+
+                <div class="visual-card">
+
+                    <div class="visual-top">
+
+                        <div>
+                            <span class="small-label">
+                                Employee Directory
+                            </span>
+
+                            <h3>Search Profile</h3>
+                        </div>
+
+                        <div class="secure-icon" aria-label="Verified">
+                            ✓
+                        </div>
+
+                    </div>
+
+                    <div class="mini-search">
+                        <span aria-hidden="true">⌕</span>
+                        <span>Search employee...</span>
+                    </div>
+
+                    <div class="mini-profile">
+
+                        <div class="avatar">RS</div>
+
+                        <div class="mini-info">
+                            <strong>Demo Employee</strong>
+                            <span>Software Engineer</span>
+                            <small>EMP001 • IT Department</small>
+                        </div>
+
+                        <span
+                            class="online-dot"
+                            aria-label="Online"
+                        ></span>
+
+                    </div>
+
+                </div>
+
+                <div class="floating-card floating-one">
+                    <span>✓</span>
+                    Verified Profile
+                </div>
+
+                <div class="floating-card floating-two">
+                    <strong>Secure</strong>
+                    <span>Company Directory</span>
+                </div>
+
             </div>
 
         </div>
 
-    </div>
+    </section>
 
 
-    <div class="hero-visual">
+    <!-- ================= ABOUT ================= -->
 
-        <div class="visual-card">
+    <section class="section about-section" id="about">
 
-            <div class="visual-top">
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="eyebrow">
+                    About Us
+                </div>
+
+                <h2>
+                    A modern company
+                    <span>built for people.</span>
+                </h2>
+
+                <p>
+                    We provide professional services through a
+                    skilled and dedicated team. Our employee directory
+                    makes authorized company information easy to find.
+                </p>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-card large-card">
+
+                    <div class="card-icon" aria-hidden="true">◆</div>
+
+                    <h3>Professional Team</h3>
+
+                    <p>
+                        Our organization brings together professionals
+                        from multiple departments working toward common
+                        business goals.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="card-icon" aria-hidden="true">↗</div>
+
+                    <h3>Innovation</h3>
+
+                    <p>
+                        We use modern technology and efficient
+                        processes to improve our services.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="card-icon" aria-hidden="true">✓</div>
+
+                    <h3>Trust</h3>
+
+                    <p>
+                        Employee information is displayed according
+                        to company privacy settings.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section class="section services-section" id="services">
+
+        <div class="container">
+
+            <div class="section-heading center">
+
+                <div class="eyebrow">
+                    Our Services
+                </div>
+
+                <h2>
+                    What we
+                    <span>provide.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="services-grid">
+
+                <article class="service-card">
+
+                    <div class="service-number">01</div>
+
+                    <div class="service-icon" aria-hidden="true">
+                        ◉
+                    </div>
+
+                    <h3>Employee Management</h3>
+
+                    <p>
+                        Organized employee records and professional
+                        profile management.
+                    </p>
+
+                </article>
+
+
+                <article class="service-card featured">
+
+                    <div class="service-number">02</div>
+
+                    <div class="service-icon" aria-hidden="true">
+                        ⌕
+                    </div>
+
+                    <h3>Employee Search</h3>
+
+                    <p>
+                        Quickly find authorized employee information
+                        using ID or name.
+                    </p>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <div class="service-number">03</div>
+
+                    <div class="service-icon" aria-hidden="true">
+                        ◈
+                    </div>
+
+                    <h3>Corporate Solutions</h3>
+
+                    <p>
+                        Digital solutions designed to support
+                        modern business operations.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EMPLOYEE DIRECTORY ================= -->
+
+    <section class="section directory-section" id="directory">
+
+        <div class="container">
+
+            <div class="directory-header">
+
+                <div class="section-heading">
+
+                    <div class="eyebrow">
+                        Employee Directory
+                    </div>
+
+                    <h2>
+                        Find your
+                        <span>employee.</span>
+                    </h2>
+
+                </div>
+
+                <div class="directory-note">
+                    Search by Employee ID or full/partial name.
+                </div>
+
+            </div>
+
+
+            <form class="search-box" id="searchForm">
+
+                <div class="search-icon" aria-hidden="true">
+                    ⌕
+                </div>
+
+                <input
+                    type="search"
+                    id="employeeSearch"
+                    placeholder="Search by Employee ID or Name..."
+                    autocomplete="off"
+                    aria-label="Search employee"
+                >
+
+                <button
+                    class="clear-search"
+                    id="clearSearch"
+                    type="button"
+                    aria-label="Clear search"
+                >
+                    ×
+                </button>
+
+                <button
+                    class="btn btn-primary search-button"
+                    id="searchButton"
+                    type="submit"
+                >
+                    Search
+                </button>
+
+            </form>
+
+
+            <div
+                class="search-status"
+                id="searchStatus"
+                aria-live="polite"
+            >
+                Enter an Employee ID or Name to search.
+            </div>
+
+
+            <div
+                class="loading-state hidden"
+                id="loadingState"
+                aria-live="polite"
+            >
+                <div class="spinner"></div>
+                <p>Searching employee directory...</p>
+            </div>
+
+
+            <div
+                class="employee-grid"
+                id="employeeResults"
+                aria-live="polite"
+            ></div>
+
+
+            <div
+                class="empty-state hidden"
+                id="emptyState"
+            >
+
+                <div class="empty-icon" aria-hidden="true">
+                    ⌕
+                </div>
+
+                <h3>Employee Not Found</h3>
+
+                <p>
+                    We couldn't find an employee matching your search.
+                    Please check the Employee ID or name.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="section contact-section" id="contact">
+
+        <div class="container contact-box">
+
+            <div>
+
+                <div class="eyebrow">
+                    Contact
+                </div>
+
+                <h2>
+                    Let's work
+                    <span>together.</span>
+                </h2>
+
+                <p>
+                    Contact our company team for business enquiries
+                    and professional assistance.
+                </p>
+
+            </div>
+
+
+            <div class="contact-details">
 
                 <div>
-                    <span class="small-label">
-                        Employee Directory
-                    </span>
-
-                    <h3>Search Profile</h3>
+                    <span>Email</span>
+                    <strong>info@yourcompany.com</strong>
                 </div>
 
-                <div class="secure-icon">
-                    ✓
+                <div>
+                    <span>Phone</span>
+                    <strong>+91 00000 00000</strong>
                 </div>
 
             </div>
 
-            <div class="mini-search">
-                <span>⌕</span>
-                <span>Search employee...</span>
-            </div>
-
-            <div class="mini-profile">
-
-                <div class="avatar">
-                    RS
-                </div>
-
-                <div class="mini-info">
-                    <strong>Demo Employee</strong>
-                    <span>Software Engineer</span>
-                    <small>EMP001 • IT Department</small>
-                </div>
-
-                <span class="online-dot"></span>
-
-            </div>
-
         </div>
 
-        <div class="floating-card floating-one">
-            <span>✓</span>
-            Verified Profile
-        </div>
-
-        <div class="floating-card floating-two">
-            <strong>Secure</strong>
-            <span>Company Directory</span>
-        </div>
-
-    </div>
-
-</div>
-```
-
-</section>
-
-<!-- ================= ABOUT ================= -->
-
-<section class="section about-section" id="about">
-
-```
-<div class="container">
-
-    <div class="section-heading">
-
-        <div class="eyebrow">
-            About Us
-        </div>
-
-        <h2>
-            A modern company
-            <span>built for people.</span>
-        </h2>
-
-        <p>
-            We provide professional services through a
-            skilled and dedicated team. Our employee directory
-            makes authorized company information easy to find.
-        </p>
-
-    </div>
-
-
-    <div class="about-grid">
-
-        <div class="about-card large-card">
-
-            <div class="card-icon">◆</div>
-
-            <h3>Professional Team</h3>
-
-            <p>
-                Our organization brings together professionals
-                from multiple departments working toward common
-                business goals.
-            </p>
-
-        </div>
-
-        <div class="about-card">
-
-            <div class="card-icon">↗</div>
-
-            <h3>Innovation</h3>
-
-            <p>
-                We use modern technology and efficient
-                processes to improve our services.
-            </p>
-
-        </div>
-
-        <div class="about-card">
-
-            <div class="card-icon">✓</div>
-
-            <h3>Trust</h3>
-
-            <p>
-                Employee information is displayed according
-                to company privacy settings.
-            </p>
-
-        </div>
-
-    </div>
-
-</div>
-```
-
-</section>
-
-<!-- ================= SERVICES ================= -->
-
-<section class="section services-section" id="services">
-
-```
-<div class="container">
-
-    <div class="section-heading center">
-
-        <div class="eyebrow">
-            Our Services
-        </div>
-
-        <h2>
-            What we
-            <span>provide.</span>
-        </h2>
-
-    </div>
-
-
-    <div class="services-grid">
-
-        <article class="service-card">
-
-            <div class="service-number">01</div>
-
-            <div class="service-icon">
-                ◉
-            </div>
-
-            <h3>Employee Management</h3>
-
-            <p>
-                Organized employee records and professional
-                profile management.
-            </p>
-
-        </article>
-
-
-        <article class="service-card featured">
-
-            <div class="service-number">02</div>
-
-            <div class="service-icon">
-                ⌕
-            </div>
-
-            <h3>Employee Search</h3>
-
-            <p>
-                Quickly find authorized employee information
-                using ID or name.
-            </p>
-
-        </article>
-
-
-        <article class="service-card">
-
-            <div class="service-number">03</div>
-
-            <div class="service-icon">
-                ◈
-            </div>
-
-            <h3>Corporate Solutions</h3>
-
-            <p>
-                Digital solutions designed to support
-                modern business operations.
-            </p>
-
-        </article>
-
-    </div>
-
-</div>
-```
-
-</section>
-
-<!-- ================= EMPLOYEE DIRECTORY ================= -->
-
-<section class="section directory-section" id="directory">
-
-```
-<div class="container">
-
-    <div class="directory-header">
-
-        <div class="section-heading">
-
-            <div class="eyebrow">
-                Employee Directory
-            </div>
-
-            <h2>
-                Find your
-                <span>employee.</span>
-            </h2>
-
-        </div>
-
-        <div class="directory-note">
-            Search by Employee ID or full/partial name.
-        </div>
-
-    </div>
-
-
-    <div class="search-box">
-
-        <div class="search-icon">
-            ⌕
-        </div>
-
-        <input
-            type="search"
-            id="employeeSearch"
-            placeholder="Search by Employee ID or Name..."
-            autocomplete="off"
-        >
-
-        <button
-            class="clear-search"
-            id="clearSearch"
-            type="button">
-            ×
-        </button>
-
-        <button
-            class="btn btn-primary search-button"
-            id="searchButton"
-            type="button">
-            Search
-        </button>
-
-    </div>
-
-
-    <div class="search-status" id="searchStatus">
-        Enter an Employee ID or Name to search.
-    </div>
-
-
-    <div class="loading-state hidden" id="loadingState">
-
-        <div class="spinner"></div>
-
-        <p>Searching employee directory...</p>
-
-    </div>
-
-
-    <div class="employee-grid"
-         id="employeeResults">
-    </div>
-
-
-    <div class="empty-state hidden" id="emptyState">
-
-        <div class="empty-icon">
-            ⌕
-        </div>
-
-        <h3>Employee Not Found</h3>
-
-        <p>
-            We couldn't find an employee matching your search.
-            Please check the Employee ID or name.
-        </p>
-
-    </div>
-
-</div>
-```
-
-</section>
-
-<!-- ================= CONTACT ================= -->
-
-<section class="section contact-section" id="contact">
-
-```
-<div class="container contact-box">
-
-    <div>
-
-        <div class="eyebrow">
-            Contact
-        </div>
-
-        <h2>
-            Let's work
-            <span>together.</span>
-        </h2>
-
-        <p>
-            Contact our company team for business enquiries
-            and professional assistance.
-        </p>
-
-    </div>
-
-    <div class="contact-details">
-
-        <div>
-            <span>Email</span>
-            <strong>info@yourcompany.com</strong>
-        </div>
-
-        <div>
-            <span>Phone</span>
-            <strong>+91 00000 00000</strong>
-        </div>
-
-    </div>
-
-</div>
-```
-
-</section>
+    </section>
 
 </main>
+
 
 <!-- ================= FOOTER ================= -->
 
 <footer class="site-footer">
 
-```
-<div class="container footer-grid">
+    <div class="container footer-grid">
 
-    <div>
+        <div>
 
-        <a href="#" class="brand footer-brand">
+            <a href="#home" class="brand footer-brand">
 
-            <div class="brand-logo">
-                CP
-            </div>
+                <div class="brand-logo">CP</div>
 
-            <div class="brand-text">
-                <strong>COMPANY PROFILE</strong>
-                <span>Employee Directory</span>
-            </div>
+                <div class="brand-text">
+                    <strong>COMPANY PROFILE</strong>
+                    <span>Employee Directory</span>
+                </div>
 
-        </a>
+            </a>
 
-        <p>
-            Professional company employee directory
-            and corporate information portal.
-        </p>
+            <p>
+                Professional company employee directory
+                and corporate information portal.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <strong>Quick Links</strong>
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#directory">Employees</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <strong>Admin</strong>
+
+            <a href="login.html">Admin Login</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+
+        </div>
 
     </div>
 
 
-    <div class="footer-links">
+    <div class="container copyright">
 
-        <strong>Quick Links</strong>
+        <span>
+            © <span id="currentYear"></span>
+            Your Company. All rights reserved.
+        </span>
 
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#directory">Employees</a>
-        <a href="#contact">Contact</a>
-
-    </div>
-
-
-    <div class="footer-links">
-
-        <strong>Admin</strong>
-
-        <a href="login.html">Admin Login</a>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
+        <span>
+            Employee Directory
+        </span>
 
     </div>
-
-</div>
-
-
-<div class="container copyright">
-
-    <span>
-        © <span id="currentYear"></span>
-        Your Company. All rights reserved.
-    </span>
-
-    <span>
-        Employee Directory
-    </span>
-
-</div>
-```
 
 </footer>
 
+
 <!-- ================= TOAST ================= -->
 
-<div class="toast" id="toast">
+<div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+    aria-atomic="true"
+>
 
-```
-<span class="toast-icon">✓</span>
+    <span class="toast-icon">✓</span>
 
-<div>
-    <strong id="toastTitle">Success</strong>
-    <p id="toastMessage">Operation completed.</p>
+    <div>
+        <strong id="toastTitle">Success</strong>
+        <p id="toastMessage">Operation completed.</p>
+    </div>
+
+    <button
+        id="toastClose"
+        type="button"
+        aria-label="Close notification"
+    >
+        ×
+    </button>
+
 </div>
 
-<button id="toastClose">×</button>
-```
-
-</div>
 
 <script src="js/app.js"></script>
 
-</body>
-</html>
+</body> </html>
